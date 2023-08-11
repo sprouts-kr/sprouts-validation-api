@@ -17,6 +17,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @ReportAsSingleViolation
 public @interface UUID {
     String message() default "{sprouts.validation.constraints.UUID.message}";
+public @interface Uuid {
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
