@@ -1,4 +1,5 @@
-import kr.sprouts.validation.constraints.annotation.Uuid;
+package kr.sprouts.framework.library.validation.constraints.annotation;
+
 import org.junit.jupiter.api.Test;
 
 import javax.validation.ConstraintViolation;

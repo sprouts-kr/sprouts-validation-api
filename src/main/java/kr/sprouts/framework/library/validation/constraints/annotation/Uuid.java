@@ -1,4 +1,4 @@
-package kr.sprouts.validation.constraints.annotation;
+package kr.sprouts.framework.library.validation.constraints.annotation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
