@@ -3,22 +3,21 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>kr.sprouts.framework.library</groupId>
   <artifactId>sprouts-validation-api</artifactId>
-  <version>0.0.7-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
   <name>sprouts-validation-api</name>
   <packaging>jar</packaging>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.release>11</maven.compiler.release>
+    <maven.compiler.release>17</maven.compiler.release>
     <!-- dependency -->
     <validation.api.version>2.0.1.Final</validation.api.version>
     <!-- plugin -->
     <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
     <maven.resources.plugin.version>3.3.1</maven.resources.plugin.version>
-    <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
-    <junit.platform.surefire.provider.version>1.2.0</junit.platform.surefire.provider.version>
+    <maven.surefire.plugin.version>3.2.1</maven.surefire.plugin.version>
     <!-- test -->
-    <junit.jupiter.version>5.9.3</junit.jupiter.version>
+    <junit.jupiter.version>5.10.0</junit.jupiter.version>
   </properties>
   <repositories>
     <!-- personal-repository -->
@@ -74,18 +73,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${maven.surefire.plugin.version}</version>
-        <dependencies>
-          <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-surefire-provider</artifactId>
-            <version>${junit.platform.surefire.provider.version}</version>
-          </dependency>
-        </dependencies>
-        <configuration>
-          <additionalClasspathElements>
-            <additionalClasspathElement>src/test/java/</additionalClasspathElement>
-          </additionalClasspathElements>
-        </configuration>
       </plugin>
     </plugins>
   </build>
