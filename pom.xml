@@ -27,23 +27,24 @@
     </repository>
   </repositories>
   <dependencies>
-    <!-- validation -->
+    <!-- validation-api -->
     <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
-      <version>${validation.api.version}</version>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
+      <version>3.0.2</version>
     </dependency>
-    <!-- validator(test) -->
+    <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
     <dependency>
       <groupId>org.hibernate.validator</groupId>
       <artifactId>hibernate-validator</artifactId>
-      <version>6.2.5.Final</version>
+      <version>8.0.1.Final</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.el -->
     <dependency>
       <groupId>org.glassfish</groupId>
-      <artifactId>javax.el</artifactId>
-      <version>3.0.0</version>
+      <artifactId>jakarta.el</artifactId>
+      <version>4.0.2</version>
       <scope>test</scope>
     </dependency>
     <!-- test -->
